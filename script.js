@@ -6,7 +6,6 @@
 
         // --- Interactive Feature 1: Tabbed Interface Logic ---
 
-    
         window.changeServiceTab = function(serviceType) {
             const tabs = document.querySelectorAll('.service-tab');
             const contentContainer = document.getElementById('service-content');
@@ -65,13 +64,7 @@
 
         // --- Scope, Parameters, and Return Values Demonstration ---
 
-        /**
-         * Calculates the estimated cleaning quote based on area and selected service type.
-         * Demonstrates: Function Scope (tempRate is local), Parameters, and a Return Value.
-         * @param {string} type - 'Residential' or 'Commercial'.
-         * @param {number} area - The size of the space in square feet.
-         * @returns {number} The calculated total quote amount.
-         */
+        
         window.calculateQuote = function(type, area) {
             // function scope: tempRate is local and not accessible outside
             const tempRate = serviceRates[type]; 
@@ -87,7 +80,6 @@
 
         /**
          * Event handler for the Quote Button.
-         * Demonstrates: Event handling and using the return value of another function.
          */
         window.handleQuoteRequest = function() {
             const areaInput = document.getElementById('area-input');
@@ -114,11 +106,7 @@
 
         // --- Custom Form Validation (Required Assignment Feature) ---
 
-        /**
-         * Handles the submission of the booking form, performing custom validation.
-         * Demonstrates: Event handling (preventDefault) and custom validation logic.
-         * @param {Event} event - The submission event.
-         */
+
         window.validateBookingForm = function(event) {
             event.preventDefault(); // Stop default HTML form submission
 
