@@ -1,0 +1,29 @@
+body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f8fafc; /* Tailwind: bg-slate-50 */
+        }
+        
+        /* Smooth transition for tab and content fading (Interactive Feature 2) */
+        .content-transition {
+            opacity: 0;
+            transition: opacity 0.5s ease-in-out;
+        }
+
+        /* Keyframe Animation for the Booking Button Glow (Interactive Feature 2) */
+        @keyframes glowing {
+            0% { box-shadow: 0 0 5px rgba(255, 165, 0, 0.5); }
+            50% { box-shadow: 0 0 10px rgba(255, 165, 0, 0.8), 0 0 20px rgba(255, 165, 0, 0.4); }
+            100% { box-shadow: 0 0 5px rgba(255, 165, 0, 0.5); }
+        }
+
+        .booking-btn:hover {
+            animation: glowing 1.5s infinite;
+            transform: scale(1.02);
+        }
+        
+        /* Active Tab Styling */
+        .tab-active {
+            border-bottom: 4px solid #f97316; /* Tailwind: border-orange-500 */
+            color: #f97316;
+            font-weight: 600;
+        }
